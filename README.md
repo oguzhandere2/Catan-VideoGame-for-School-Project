@@ -1,5 +1,6 @@
 # CS319-3G-CA
 Catan Game
+
 Catan is a board game which can be played by 3-4 players and it takes between 45-90 minutes. 
 The object of the game is to be the first person to have 10 victory points. You receive 1 victory point for each settlement you have and you receive 2 victory points for each city you have. If you control the longest road and the largest army then you receive two points for each. Also some development cards are worth victory points. 
 
