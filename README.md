@@ -17,7 +17,5 @@ On the water tiles there are ports that surrounds the tiles. The ports can be us
 When a player reach 10 points, s/he wins the game. Players should use differents strategies to defeat his/her opponents.
 
 Properties which we may try to add:
--Chat room
--Count of win/Count of game rate for matching players
--Different mods like playing without robber rule.
--Trade development cards with other players
+-Different mods like playing without robber rule : Angel Mode
+-New Development Cards : Judge Card
