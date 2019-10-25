@@ -19,3 +19,5 @@ When a player reach 10 points, s/he wins the game. Players should use differents
 Properties which we may try to add:
 -Different mods like playing without robber rule : Angel Mode
 -New Development Cards : Judge Card
+
+Analysis Report: https://docs.google.com/document/d/1fMLzVh5gtESzFd0qmwjL7xgPkSbuDYtceBnSu9MNDnY/edit?usp=sharing
