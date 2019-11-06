@@ -20,3 +20,5 @@ Properties which we may try to add:
 -Count of win/Count of game rate for matching players
 -Different mods like playing without robber rule.
 -Trade development cards with other players
+ 
+Analysis Report: https://docs.google.com/document/d/1fMLzVh5gtESzFd0qmwjL7xgPkSbuDYtceBnSu9MNDnY/edit?usp=sharing
