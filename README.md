@@ -1,5 +1,6 @@
 # CS319-3G-CA
 Catan Game
+
 Catan is a board game which can be played by 3-4 players and it takes between 45-90 minutes. 
 The object of the game is to be the first person to have 10 victory points. You receive 1 victory point for each settlement you have and you receive 2 victory points for each city you have. If you control the longest road and the largest army then you receive two points for each. Also some development cards are worth victory points. 
 
@@ -16,9 +17,7 @@ On the water tiles there are ports that surrounds the tiles. The ports can be us
 When a player reach 10 points, s/he wins the game. Players should use differents strategies to defeat his/her opponents.
 
 Properties which we may try to add:
--Chat room
--Count of win/Count of game rate for matching players
--Different mods like playing without robber rule.
--Trade development cards with other players
- 
+-Different mods like playing without robber rule : Angel Mode
+-New Development Cards : Judge Card
+
 Analysis Report: https://docs.google.com/document/d/1fMLzVh5gtESzFd0qmwjL7xgPkSbuDYtceBnSu9MNDnY/edit?usp=sharing
