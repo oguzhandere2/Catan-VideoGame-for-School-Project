@@ -51,6 +51,8 @@ public class gui extends Application  {
         button6.setText("Quit");
         button6.setOnAction(e-> window.close() );
 
+
+
         Button button7 = new Button ("Audio Settings");
 
         Button button9 = new Button ("Robbery Mode");
