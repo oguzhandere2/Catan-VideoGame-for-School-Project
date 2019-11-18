@@ -82,9 +82,6 @@ public class gui extends Application  {
         button10.setMaxSize(300,100);
         button7.setMaxSize(300,100);
 
-        System.out.println("Working Directory = " +
-                System.getProperty("user.dir"));
-        System.out.println("file:" + System.getProperty("user.dir") + "/src/catan.jpg");
         //images
         Image image = new Image("file:" + System.getProperty("user.dir") + "/src/catan.jpg");
         ImageView iv = new ImageView();
