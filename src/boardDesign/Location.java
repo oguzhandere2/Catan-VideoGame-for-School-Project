@@ -13,6 +13,10 @@ public class Location {
         this.part = part;
     }
 
+    public static void main(String[] args) {
+        System.out.println("aa");
+    }
+
     /*public boardDesign.Location(int x, int y) {
         this.x = x;
         this.y = y;

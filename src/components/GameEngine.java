@@ -1,9 +1,11 @@
 package components;
 
+import boardDesign.Board;
+
 import java.util.ArrayList;
 
 public class GameEngine {
-    Player players[];
+    Player[] players;
     Angel angel;
     Robber robber;
     Board board;

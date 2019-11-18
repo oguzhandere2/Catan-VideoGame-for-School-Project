@@ -1,5 +1,7 @@
 package components;
 
+import boardDesign.Location;
+
 public class Robber {
     private Location location;
 
