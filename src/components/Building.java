@@ -2,10 +2,6 @@ package components;
 
 import boardDesign.Location;
 
-/**
- * @author = fatih
- * @date = 10.11.2019
- */
 public class Building {
     private int point;
     private Location location;

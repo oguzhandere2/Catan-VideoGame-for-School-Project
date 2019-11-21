@@ -1,10 +1,5 @@
 package components;
 
-/**
- * This class is created for trade operations.
- * @author = fatih
- * @date = 10.11.2019
- */
 public class Trade {
 
     private int buyer;  // no of player
