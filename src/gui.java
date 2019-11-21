@@ -11,11 +11,16 @@ import javafx.stage.Screen;
 import javafx.stage.Stage;
 import javafx.scene.text.Font;
 import javafx.scene.control.Label;
+import javafx.scene.Group;
+import javafx.scene.paint.Color;
+import javafx.scene.shape.Polygon;
 
 
 public class gui extends Application  {
     Stage window;
-    Scene scene, scene2, scene3, scene4, scene5;
+    Scene scene, scene2, scene3, scene4, scene5, sceneMap;
+    double a = 2000;
+    double b= 1000;
 
     public static void main(String[] args) {
         launch(args);
@@ -51,11 +56,10 @@ public class gui extends Application  {
         button6.setText("Quit");
         button6.setOnAction(e-> window.close() );
 
-
-
         Button button7 = new Button ("Audio Settings");
 
         Button button9 = new Button ("Robbery Mode");
+        button9.setOnAction(e->window.setScene(sceneMap));
         Button button10 = new Button ("Angel Mode");
 
         //back buttons
@@ -63,16 +67,19 @@ public class gui extends Application  {
         Button button12 = new Button ("BACK");
         Button button8 = new Button ("BACK");
         Button button13 = new Button ("BACK");
+        Button button14 = new Button ("BACK");
 
         button11.setMaxSize(100,100);
         button12.setMaxSize(100,100);
         button8.setMaxSize(100,100);
         button13.setMaxSize(100,100);
+        button14.setMaxSize(100,100);
 
         button8.setOnAction(e -> window.setScene(scene));
         button11.setOnAction(e -> window.setScene(scene));
         button12.setOnAction(e -> window.setScene(scene));
         button13.setOnAction(e -> window.setScene(scene));
+        button14.setOnAction(e -> window.setScene(scene));
 
         button1.setMaxWidth(500);
         button2.setMaxWidth(500);
@@ -171,8 +178,8 @@ public class gui extends Application  {
         label6.setFont(new Font("Arial", 30));
         label6.setStyle("-fx-font-weight: bold;");
         Label label7 = new Label("How to Play?");
-        label7.setFont(new Font("Arial", 30));
 
+        label7.setFont(new Font("Arial", 30));
 
         VBox centerMenu4 = new VBox (20);
         centerMenu4.getChildren().addAll(label6, label7, button12);
@@ -190,11 +197,17 @@ public class gui extends Application  {
         label8.setFont(new Font("Arial", 30));
         label8.setStyle("-fx-font-weight: bold;");
         Label label9 = new Label("Credits");
+        Label label10= new Label ("Mehmet Tolga Tomris \n" +
+                "Fatih Çakır \n" +
+                "Atakan Arslan \n" +
+                "Zeynep Berfin Gökalp \n" +
+                "Oğuzhan Dere");
+        label10.setStyle("-fx-font-weight: bold;");
         label9.setFont(new Font("Arial", 30));
-
+        label10.setFont(new Font("Arial", 15));
 
         VBox centerMenu5 = new VBox (20);
-        centerMenu5.getChildren().addAll(label8, label9, button13);
+        centerMenu5.getChildren().addAll(label8, label9, label10, button13);
         centerMenu5.setAlignment(Pos.CENTER);
 
         StackPane layout5 = new StackPane();
@@ -203,6 +216,213 @@ public class gui extends Application  {
 
         scene5 = new Scene(layout5, screenBounds.getWidth(), screenBounds.getHeight());
 
-    }
+        //MAP
 
+        //creating hexagons
+        Polygon hexagon1 = new Polygon();
+        Polygon hexagon2 = new Polygon();
+        Polygon hexagon3 = new Polygon();
+        Polygon hexagon4 = new Polygon();
+        Polygon hexagon5 = new Polygon();
+        Polygon hexagon6 = new Polygon();
+        Polygon hexagon7 = new Polygon();
+        Polygon hexagon8 = new Polygon();
+        Polygon hexagon9 = new Polygon();
+        Polygon hexagon10 = new Polygon();
+        Polygon hexagon11 = new Polygon();
+        Polygon hexagon12 = new Polygon();
+        Polygon hexagon13 = new Polygon();
+        Polygon hexagon14 = new Polygon();
+        Polygon hexagon15 = new Polygon();
+        Polygon hexagon16 = new Polygon();
+        Polygon hexagon17 = new Polygon();
+        Polygon hexagon18 = new Polygon();
+        Polygon hexagon19 = new Polygon();
+
+        //setting coordinates of hexagons
+        hexagon1.getPoints().addAll((a/2), 50.0,
+                (a/2)+35.35, 85.35,
+                (a/2)+35.35, 135.35,
+                (a/2), 170.7,
+                (a/2)-35.35, 135.35,
+                (a/2)-35.35, 85.35);
+
+        hexagon2.getPoints().addAll((a/2)-70.7,50.0,
+                (a/2)-35.35, 85.35,
+                (a/2)-35.35, 135.35,
+                (a/2)-70.7, 170.7,
+                (a/2)-106.05, 135.5,
+                (a/2)-106.05, 85.35);
+
+        hexagon3.getPoints().addAll((a/2)+70.7, 50.0,
+                (a/2)+106.5, 85.35,
+                (a/2)+106.5, 135.35,
+                (a/2)+70.7, 170.7,
+                (a/2)+35.35, 135.5,
+                (a/2)+35.35, 85.35);
+
+        hexagon4.getPoints().addAll((a/2)+106.5, 135.35,
+                (a/2)+141.4, 170.7,
+                (a/2)+141.4, 220.7,
+                (a/2)+106.5, 256.05,
+                (a/2)+70.7, 220.7,
+                (a/2)+70.7, 170.7);
+
+        hexagon5.getPoints().addAll((a/2)+141.4, 220.7,
+                (a/2)+176.75, 256.05,
+                (a/2)+176.75, 306.05,
+                (a/2)+141.4, 341.4,
+                (a/2)+106.5, 306.5,
+                (a/2)+106.5, 256.05);
+
+        hexagon6.getPoints().addAll((a/2)+106.5, 306.5,
+                (a/2)+141.4, 341.4,
+                (a/2)+141.4, 391.4,
+                (a/2)+106.5, 426.75,
+                (a/2)+70.7, 391.4,
+                (a/2)+70.7, 341.4);
+
+        hexagon7.getPoints().addAll((a/2)+70.7, 391.4,
+                (a/2)+106.5, 426.75,
+                (a/2)+106.5, 476.75,
+                (a/2)+70.7, 512.1,
+                (a/2)+35.35, 476.75,
+                (a/2)+35.35, 426.75);
+
+        hexagon8.getPoints().addAll((a/2), 391.4,
+                (a/2)+35.35, 426.75,
+                (a/2)+35.35, 476.75,
+                (a/2), 512.1,
+                (a/2)-35.35, 476.75,
+                (a/2)-35.35, 426.75);
+
+        hexagon9.getPoints().addAll((a/2)-70.7,391.4,
+                (a/2)-35.35, 426.75,
+                (a/2)-35.35, 476.75,
+                (a/2)-70.7, 512.1,
+                (a/2)-106.05, 476.75,
+                (a/2)-106.05, 426.75);
+
+        hexagon10.getPoints().addAll((a/2)-106.5, 306.5,
+                (a/2)-70.7, 341.4,
+                (a/2)-70.7, 391.4,
+                (a/2)-106.5, 426.75,
+                (a/2)-141.4, 391.4,
+                (a/2)-141.4, 341.4);
+
+        hexagon11.getPoints().addAll((a/2)-141.4, 220.7,
+                (a/2)-106.5, 256.05,
+                (a/2)-106.5, 306.05,
+                (a/2)-141.4, 341.4,
+                (a/2)-176.75, 306.5,
+                (a/2)-176.75, 256.05);
+
+        hexagon12.getPoints().addAll((a/2)-106.5, 135.35,
+                (a/2)-70.7, 170.7,
+                (a/2)-70.7, 220.7,
+                (a/2)-106.5, 256.05,
+                (a/2)-141.4, 220.7,
+                (a/2)-141.4, 170.7);
+
+        hexagon13.getPoints().addAll((a/2)-35.35, 135.35,
+                (a/2), 170.7,
+                (a/2), 220.7,
+                (a/2)-35.35, 256.05,
+                (a/2)-70.7, 220.7,
+                (a/2)-70.7, 170.7);
+
+        hexagon14.getPoints().addAll((a/2)+35.35, 135.35,
+                (a/2)+70.7, 170.7,
+                (a/2)+70.7, 220.7,
+                (a/2)+35.35, 256.05,
+                (a/2), 220.7,
+                (a/2), 170.7);
+
+        hexagon15.getPoints().addAll((a/2)-70.7, 220.7,
+                (a/2)-35.35, 256.05,
+                (a/2)-35.35, 306.05,
+                (a/2)-70.7, 341.4,
+                (a/2)-106.5, 306.5,
+                (a/2)-106.5, 256.05);
+
+        hexagon16.getPoints().addAll((a/2), 220.7,
+                (a/2)+35.35, 256.05,
+                (a/2)+35.35, 306.05,
+                (a/2), 341.4,
+                (a/2)-35.35, 306.05,
+                (a/2)-35.35, 256.05);
+
+        hexagon17.getPoints().addAll((a/2)+70.7, 220.7,
+                (a/2)+106.5, 256.05,
+                (a/2)+106.5, 306.5,
+                (a/2)+70.7, 341.4,
+                (a/2)+35.35, 306.05,
+                (a/2)+35.35, 256.05);
+
+        hexagon18.getPoints().addAll((a/2)-35.35, 306.05,
+                (a/2), 341.4,
+                (a/2), 391.4,
+                (a/2)-35.35, 426.75,
+                (a/2)-70.7,391.4,
+                (a/2)-70.7, 341.4);
+
+        hexagon19.getPoints().addAll((a/2)+35.35, 306.05,
+                (a/2)+70.7, 341.4,
+                (a/2)+70.7, 391.4,
+                (a/2)+35.35, 426.75,
+                (a/2), 391.4,
+                (a/2), 341.4);
+
+        // changing colors of hexagons
+        hexagon1.setFill(Color.DARKGREEN);
+        hexagon1.setStroke(Color.BLACK);
+        hexagon2.setFill(Color.BROWN);
+        hexagon2.setStroke(Color.BLACK);
+        hexagon3.setFill(Color.YELLOW);
+        hexagon3.setStroke(Color.BLACK);
+        hexagon4.setFill(Color.LIGHTGRAY);
+        hexagon4.setStroke(Color.BLACK);
+        hexagon5.setFill(Color.GREENYELLOW);
+        hexagon5.setStroke(Color.BLACK);
+        hexagon6.setFill(Color.DARKGREEN);
+        hexagon6.setStroke(Color.BLACK);
+        hexagon7.setFill(Color.DARKGOLDENROD);
+        hexagon7.setStroke(Color.BLACK);
+        hexagon8.setFill(Color.YELLOW);
+        hexagon8.setStroke(Color.BLACK);
+        hexagon9.setFill(Color.DARKGREEN);
+        hexagon9.setStroke(Color.BLACK);
+        hexagon10.setFill(Color.BROWN);
+        hexagon10.setStroke(Color.BLACK);
+        hexagon11.setFill(Color.YELLOW);
+        hexagon11.setStroke(Color.BLACK);
+        hexagon12.setFill(Color.DARKGREEN);
+        hexagon12.setStroke(Color.BLACK);
+        hexagon13.setFill(Color.LIGHTGRAY);
+        hexagon13.setStroke(Color.BLACK);
+        hexagon14.setFill(Color.DARKGREEN);
+        hexagon14.setStroke(Color.BLACK);
+        hexagon15.setFill(Color.GREENYELLOW);
+        hexagon15.setStroke(Color.BLACK);
+        hexagon16.setFill(Color.BROWN);
+        hexagon16.setStroke(Color.BLACK);
+        hexagon17.setFill(Color.YELLOW);
+        hexagon17.setStroke(Color.BLACK);
+        hexagon18.setFill(Color.LIGHTGRAY);
+        hexagon18.setStroke(Color.BLACK);
+        hexagon19.setFill(Color.GREENYELLOW);
+        hexagon19.setStroke(Color.BLACK);
+
+        //Creating a Group object
+        StackPane layout6 = new StackPane();
+        Group root = new Group(hexagon1,hexagon2,hexagon3,hexagon4,hexagon5,hexagon6,hexagon7,hexagon8,hexagon9,hexagon10,hexagon11,hexagon12,hexagon13,hexagon14,hexagon15,hexagon16,hexagon17,hexagon18,hexagon19);
+        layout6.styleProperty().set("-fx-background-color: #0099FF");
+        VBox box = new VBox();
+        box.getChildren().addAll(button14);
+        box.setAlignment(Pos.BOTTOM_CENTER);
+        layout6.getChildren().addAll(root, box);
+        layout6.setAlignment(Pos.CENTER);
+        sceneMap = new Scene(layout6, a, b);
+
+    }
 }
