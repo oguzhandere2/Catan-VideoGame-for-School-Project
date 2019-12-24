@@ -33,3 +33,7 @@ Design Report Iteration 2: https://docs.google.com/document/d/1NNSNIJV-C3Ux2ksJK
 Final Report Iteration 2: https://docs.google.com/document/d/1ktcprPbAZouII_DUSkVsTsCBDaY9TpkUX7Wm4Qr0BjQ/edit
 
 Project Meetings: https://docs.google.com/document/d/1dtuYd_ApazgsbkmmD5W9zJa5_OjDwnv41-2qLxfY42I/edit#heading=h.5fz51xqy4e8r
+
+Trailer: https://www.youtube.com/watch?v=z1m96MgQ_Xs
+
+Presentation: https://docs.google.com/presentation/d/1kf3U-XUFMZ3pN13p1N4vpQA6Gts4qXvgfA6vNrx3tB4/edit?usp=sharing
